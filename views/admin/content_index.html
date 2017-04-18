@@ -1,0 +1,37 @@
+<!--http://blog.csdn.net/qq_24861509/article/details/50560170-->
+<!--查看block、extends、include三者的用法和区别>
+<!--实现对layout的继承-->
+{% extends "layout.html" %}
+
+<!--重写block模块-->
+{% block main %}
+<ol class="breadcrumb">
+    <li><a href="/admin/content">管理首页</a></li>
+    <li><span>内容列表</span></li>
+</ol>
+
+<h3>内容管理</h3>
+<p>{{message}}</p>
+<table class="table table-hover table-striped">
+    <tr>
+        <th>ID</th>
+        <th>分类</th>
+        <th>内容标题</th>
+        <th>内容简介</th>
+        <th>操作</th>
+    </tr>
+    {% for content in contents %}
+    <tr>
+        <td>{{content.idcontent}}</td>
+        <td>{{content.categoryname}}</td>
+        <td>{{content.title}}</td>
+        <td>{{content.description}}</td>
+        <td>
+            <a href="/admin/content/edit?idcontent={{content.idcontent}}" >修改</a>
+            |
+            <a href="/admin/content/delete?idcontent={{content.idcontent}}">删除</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

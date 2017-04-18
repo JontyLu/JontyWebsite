@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.navbar-inverse {
+    background: url("/public/work/image/stars.jpg");
+    color: #00B7FF;
+}
+.jumbotron{
+    width: 100%;
+    background: url('/public/work/image/stars.jpg');
+    background-repeat: repeat-y;
+    padding: 10rem;
+}
+.jumbotron h1{
+
+}
+.main{
+    margin: 2rem;
+}
+
+.mainLeft{
+    float: left;
+    width: 70%;
+    margin: 0.5rem;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    padding: 4%;
+    background-color: #000000;
+    box-sizing:border-box;
+
+    display: inline-block;
+}
+.rightBox{
+    width: 20%;
+
+    background-color: #000000;
+    position: absolute;
+    padding: 2rem;
+    margin: 0.5rem;
+    outline: none;
+    margin-left:75%;
+    padding-top: 3.0rem;
+    box-sizing:border-box;
+}

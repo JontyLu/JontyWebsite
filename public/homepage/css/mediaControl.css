@@ -1,0 +1,128 @@
+html{
+    font-size: 20px;
+}
+.divBox {
+    width: 33.3%;
+    float: left;
+}
+.bgImage{
+    width: 40%;
+    left: 50%;
+    margin-left: -20%;
+    top: 25%;
+}
+
+@media (max-width: 1199px){
+    /*<=1199的设备 */
+    html {
+        font-size: 30px !important;
+    }
+    .divBox{
+        width: 100%;
+    }
+    .bgImage{
+        width: 20%;
+        left: 50%;
+        margin-left: -10%;
+        top: 15%;
+    }
+}
+
+@media (max-width: 1024px){
+    /*<=1199的设备 */
+    html {
+        font-size: 25px !important;
+    }
+    .divBox{
+        width: 100%;
+    }
+    .bgImage{
+        width: 20%;
+        left: 50%;
+        margin-left: -10%;
+        top: 30%;
+    }
+}
+
+@media (max-width: 991px){
+    /*<=991的设备*/
+    html {
+        font-size: 20px !important;
+    }
+    .divBox{
+        width: 100%;
+    }
+    .bgImage{
+        width: 20%;
+        left: 50%;
+        margin-left: -10%;
+        top: 30%;
+    }
+}
+@media (max-width: 767px){
+    /*<=768的设备*/
+    html {
+        font-size: 15px !important;
+    }
+    .divBox{
+        width: 100%;
+    }
+    .bgImage{
+        width: 20%;
+        left: 50%;
+        margin-left: -10%;
+        top: 30%;
+    }
+    .titleName{
+        visibility: visible;
+    }
+}
+
+@media (max-width: 767px){
+    /*<=768的设备*/
+    html {
+        font-size: 10px !important;
+    }
+    .divBox{
+        width: 100%;
+    }
+    .bgImage{
+        width: 20%;
+        left: 50%;
+        margin-left: -10%;
+        top: 30%;
+    }
+
+}
+
+@media (max-width: 640px){
+    /*<=768的设备*/
+    html {
+        font-size: 10px !important;
+    }
+    .divBox{
+        width: 100%;
+    }
+    .bgImage{
+        width: 20%;
+        left: 50%;
+        margin-left: -10%;
+        top: 30%;
+    }
+}
+
+@media (max-width: 415px){
+    /*<=768的设备*/
+    html {
+        font-size: 10px !important;
+    }
+    .divBox{
+        width: 100%;
+    }
+    .bgImage{
+        width: 20%;
+        left: 50%;
+        margin-left: -10%;
+        top: 35%;
+    }
+}

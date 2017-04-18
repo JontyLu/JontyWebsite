@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="main text-center">
+    {% for content in contents %}
+    <div class="mainLeft">
+        <h1>{{content.title}}</h1>
+        <p class="">
+            作者：<span>这是作者</span>
+            时间：<span>这是时间</span>
+            阅读：<span>这是阅读数</span>
+            评论：<span>这是评论数</span>
+        </p>
+        <p>{{content.description}}</p>
+        <p>
+            <a href="/work/views?idcontent={{content.idcontent}}" class="btn btn-primary btn-lg active">阅读全文</a>
+        </p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+{% block main %}
+<!--如果cookies中userInfo.username存在的话，就渲染出用户信息-->
+{% if userInfo.username  %}
+<div class="rightBox" id="userInfo">
+    <div class="title"><span>用户信息</span></div>
+    <p><span class="colDark">{{userInfo.username}}</span></p>
+    <!--如果是管理员，显示管理员的界面-->
+    {% if userInfo.isadmin == 1 %}
+    <p>
+        <span class="colDanger">你好，你是管理员</span>
+        <a href="/admin">你可以点击这里进入管理</a>
+    </p>
+    {% else %}<!--普通账户只是显示该词段-->
+    <p><span class="colDanger">你好，欢迎光临我的博客</span></p>
+    {% endif %}
+    <p><span class="colDark"><a id="logout" href="javascript:;">退出</a></span></p>
+</div>
+{% else %}
+<div class="rightBox text-center" id="loginBox" >
+    <div class="title" style="margin-bottom: 1rem"><span>登录</span></div>
+    <div class="line form-group">
+        <label for="username">用户名</label>
+        <input class="form-control" id="username" name="username" type="text"/><em></em>
+
+    </div>
+    <div class="line">
+        <label for="password">密码</label>
+        <span class="colDark"></span>
+        <input  class="form-control" name="password"  type="password" id="password"/><em></em>
+
+    </div>
+    <div class="line" style="margin-top: 1.5rem">
+        <button type="submit" class="btn btn-default">登录</button>
+
+    </div>
+    <p class="textRight">还没注册？
+        <a href="javascript:;" class="colMint">马上注册</a>
+    </p>
+    <p class="colWarning textCenter"></p>
+</div>
+
+<div class="rightBox text-center" id="registerBox" style="display: none;">
+    <div class="title" style="margin-bottom: 1rem"><span>注册</span></div>
+    <div class="line">
+        <label for="usernameR">用户名</label>
+        <input class="form-control" id="usernameR" name="username" type="text"/><em></em>
+
+    </div>
+    <div class="line">
+        <label for="passwordR">密码</label>
+        <input class="form-control" id="passwordR" name="password" type="password"/><em></em>
+
+    </div>
+    <div class="line">
+        <label>确认</label>
+        <input  class="form-control" name="repassword" type="password"/><em></em>
+
+    </div>
+
+    <div class="line" style="margin-top: 1.5rem">
+        <button type="submit" class="btn btn-default">注册</button>
+
+    </div>
+    <p class="textRight">已有账号？
+        <a href="javascript:;" class="colMint">马上登录</a>
+    </p>
+    <p class="colWarning textCenter"></p>
+</div>
+{% endif %}
+
+{% endblock %}
+

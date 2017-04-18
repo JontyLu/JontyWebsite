@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Our WebSite</title>
+    <link rel="stylesheet" href="/public/homepage/css/index.css"/>
+    <link rel="stylesheet" href="/public/homepage/css/mediaControl.css"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+</head>
+<body>
+<div class="divBox homePage" >
+    <h1>Welcome to our WebSite!</h1>
+</div>
+
+<div class="divBox aboutUs">
+    <a href="/aboutus">
+        <img thissrc="/public/homepage/image/airplane.svg" alt="" class="bgImage aboutUsBgImage"/>
+        <span class = "titleName">About Us</span>
+    </a>
+
+</div>
+
+<div class="divBox works">
+    <a href="/work">
+        <img class="bgImage worksBgImage" thissrc="/public/homepage/image/camera.svg" alt="" class="camera"/>
+        <span class = "titleName">Works</span>
+    </a>
+
+</div>
+
+
+<div class="divBox CrazePage">
+    <a href="#">
+        <img class="bgImage CrazeBgImage" thissrc="/public/homepage/image/video.svg" alt="" class="bgImage"/>
+        <span class = "titleName">Craze's Profile</span>
+    </a>
+
+</div>
+<div class="divBox JontyPage">
+    <a href="https://jontylu.github.io/jonty_blog/">
+        <img class="bgImage JontyBgImage" thissrc="/public/homepage/image/word.svg" alt="" class="bgImage"/>
+        <span class = "titleName">Jonty's Profile</span>
+    </a>
+
+</div>
+<div class="divBox wspPage">
+    <a href="#">
+        <img class="bgImage wspBgImage" thissrc="/public/homepage/image/pen.svg" alt="" class="bgImage"/>
+        <span class = "titleName">Jarden's Profile</span>
+    </a>
+
+</div>
+<script src="/public/homepage/js/index.js"></script>
+<script>
+    var imgs = document.getElementsByTagName("img");
+    for (var i=0; i<imgs.length; i++){
+        if(imgs[i].src == ""){
+            imgs[i].src = imgs[i].getAttribute("thissrc");
+        }
+    }
+</script>
+</body>
+</html>

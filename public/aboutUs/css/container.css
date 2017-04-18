@@ -1,0 +1,47 @@
+
+.container{
+    box-sizing: border-box;
+    height: 100%;
+    margin: 1rem;
+    padding-top: 1rem;
+    border: 0.05rem solid #ffffff;
+}
+
+.eachResume{
+    box-sizing: border-box;
+    border-bottom: 0.05rem solid #ffffff;
+    text-align: center;
+    position: relative;
+    padding: 0.1rem;
+
+}
+
+
+.eachResume a{
+    width: 25%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.eachResume a h2{
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+.eachResume a h2:hover{
+    display: inline-block;
+    height: 30%;
+    color: #2D3E50;
+    padding: 0.1rem ;
+    background: #ffffff;
+    border-radius: 0.2rem;
+}
+.eachResume a img {
+    max-width: 80%  ;
+    border: 0.05rem solid #ffffff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+}
+.eachResume a:nth-child(2){
+    margin:0 5rem 0 5rem;
+}

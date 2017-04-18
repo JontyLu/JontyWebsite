@@ -1,0 +1,15 @@
+<!--http://blog.csdn.net/qq_24861509/article/details/50560170-->
+<!--查看block、extends、include三者的用法和区别>
+<!--实现对layout的继承-->
+{% extends "layout.html" %}
+
+<!--重写block模块-->
+{% block main %}
+<ol class="breadcrumb">
+    <li><a href="/admin/category">管理首页</a></li>
+    <li><span>删除信息</span></li>
+</ol>
+
+<h3>分类管理</h3>
+<p>{{message}}</p>
+{% endblock %}

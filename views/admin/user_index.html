@@ -1,0 +1,41 @@
+<!--http://blog.csdn.net/qq_24861509/article/details/50560170-->
+<!--查看block、extends、include三者的用法和区别>
+<!--实现对layout的继承-->
+{% extends "layout.html" %}
+
+<!--重写block模块-->
+{% block main %}
+<ol class="breadcrumb">
+    <li><a href="">管理首页</a></li>
+    <li><span>用户列表</span></li>
+</ol>
+
+<h3>用户列表</h3>
+<table class="table table-hover table-striped">
+    <tr>
+        <th>用户名</th>
+        <th>密码</th>
+        <th>是否是管理员</th>
+    </tr>
+    {% for user in users %}
+    <tr>
+        <td>{{user.username}}</td>
+        <td>{{user.password}}</td>
+        <td>
+            {% if user.isadmin == 1 %}
+            是
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+<nav aria-label="...">
+    <ul class="pager">
+        <li class="previous"><a href="/admin/user?page={{page-1}}"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+        <li>
+            一共有 {{count}} 条数据，每页显示 {{limit}} 条数据，一共 {{pages}}页，当前第{{page}}页
+        </li>
+        <li class="next"><a href="/admin/user?page={{page+1}}">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+</nav>
+{% endblock %}

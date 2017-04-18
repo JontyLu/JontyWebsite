@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.divBox{
+    width: 100%;
+    transition: background-color 0.5s;
+    position: relative;
+
+
+}
+.divBox:not(:first-child):hover{
+    background-color: black;
+    opacity: 0.9;
+}
+a{
+    text-decoration: none;
+}
+.titleName{
+    font-size: 1rem;
+    color:#ffffff;
+    width: 100%;
+    letter-spacing: 0.2rem;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top:80%;
+    visibility: hidden;
+}
+.divBox:hover .titleName{
+    visibility: visible;
+    animation: bounce 0.1s;
+}
+@keyframes bounce {
+    from,to{
+        transform: translateY(30vh) scaleY(.98);
+    }
+}
+
+
+
+.homePage{
+    background-color: #33CC99;
+}
+.homePage h1{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top:40%;
+}
+
+
+.aboutUs{
+    background-color: #2D3E50;
+}
+
+.aboutUs .aboutUsBgImage{
+    position: absolute;
+}
+.works{
+    background-color: #2ecc71;
+}
+.works .worksBgImage{
+    position: absolute;
+
+}
+.CrazePage{
+    background-color: #FFC41A;
+}
+
+.CrazePage .CrazeBgImage{
+    position: absolute;
+}
+
+.CrazePage h2{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top:80%;
+}
+
+
+.JontyPage{
+    background-color: #EA4335;
+
+}
+
+.JontyPage .JontyBgImage{
+    position: absolute;
+    transform: rotate(19deg);
+}
+
+.wspPage{
+    background-color: #99CC33;
+
+}
+
+.wspPage .wspBgImage{
+    position: absolute;
+    transform: rotate(-60deg);
+}

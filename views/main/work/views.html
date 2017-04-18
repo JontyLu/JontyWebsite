@@ -1,0 +1,24 @@
+{% extends "work.html" %}
+{% block content %}
+<div class="main">
+    <div class="mainLeft">
+        <div class="text-center">
+            <h1>{{content.title}}</h1>
+            <p class="">
+                作者：<span>这是作者</span>
+                时间：<span>这是时间</span>
+                阅读：<span>这是阅读数</span>
+                评论：<span>这是评论数</span>
+            </p>
+            <p>{{content.description}}</p>
+        </div>
+        <div id="fileContent">
+            {% autoescape false %}
+            {{ fileContent }}
+            {% endautoescape %}
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}

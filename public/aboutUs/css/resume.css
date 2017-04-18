@@ -1,0 +1,205 @@
+.resumeDiv{
+    width: 100% ;
+    height: 100rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    position: relative;
+    background-color: #2D3E50;
+}
+
+.container .eachResume a img{
+    display: none;
+}
+.myName{
+    width: 100%;
+    border: 0.01rem solid #ffffff;
+    background-color: #2D3E50;
+    background-image: url(../../homePage/image/pen.svg);
+    background-repeat: repeat ;
+    padding-top:3rem;
+    text-align: center;
+}
+
+.myName h1{
+    font-size: 4rem;
+    color: #ffffff;
+    margin-top:4rem;
+    letter-spacing: 0.5rem;
+}
+.myName h4{
+    color: #ffffff;
+    letter-spacing: 0.25rem;
+    margin-bottom: 5rem;
+}
+.aboutMe{
+    width: 100%;
+    padding: 1rem 3rem 2rem 3rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #2D3E50;
+}
+
+.aboutMe span{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem 0  0 1rem;
+}
+.resumeContent{
+    width: 100%;
+    box-sizing: border-box;
+    color: #2D3E50;
+
+
+}
+.resumeContent>div{
+    width: 100%;
+    float: left;
+    padding: 1rem 2rem 1rem 2rem;
+    box-sizing: border-box;
+    border-bottom: 0.01rem solid #A0A0A0 ;
+    background-color: #fff;
+}
+
+.resumeContent>div>span{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 15%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding: 1rem 1rem  0 1rem;
+}
+
+.resumeContent>div>span:nth-child(2){
+    width: 65%;
+}
+.resumeContent>div>span:nth-child(2) span{
+    width: 100%;
+    text-align:center;
+    float: left;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+
+}
+.resumeContent>div>span:nth-child(2) span p{
+    opacity: 0.8;
+    font-size: 1rem;
+}
+@media (max-width: 1199px){
+    /*<=1199的设备 */
+
+}
+
+@media (max-width: 1024px){
+    /*<=1199的设备 */
+
+}
+
+@media (max-width: 991px){
+    /*<=991的设备*/
+    .eachResume a h2{
+        font-size: 0.6rem;
+    }
+    .eachResume a:nth-child(2){
+        margin: 2.3rem;
+    }
+    .navMenu{
+        display: none;
+    }
+    .smallMenu{
+        width: 10%;
+        visibility: visible;
+    }
+    .navOpenMenu a{
+        margin-top: 1rem;
+        font-size: 0.5rem;
+
+    }
+
+}
+@media (max-width: 767px){
+    /*<=768的设备*/
+
+}
+
+@media (max-width: 767px){
+    /*<=768的设备*/
+
+
+}
+
+@media (max-width: 640px){
+    /*<=768的设备*/
+    .eachResume a:nth-child(2){
+        margin: 1.0rem;
+    }
+    .navOpenMenu a{
+        margin-top: 0.5rem;
+        font-size: 0.5rem;
+
+    }
+    .logo,.logo-divider,.logoname{
+        font-size: 0.5rem;
+    }
+    .myName{
+        padding-top:1rem;
+
+    }
+    .myName h1{
+        font-size: 1rem;
+        margin:2rem 0 0 0;
+    }
+    .myName h4{
+        font-size: 0.5rem;
+        margin:0 0 0.5rem 0;
+    }
+
+    .navOpenMenu a{
+        margin-top: 1rem;
+        font-size: 0.5rem;
+
+    }
+    .resumeDiv{
+        padding: 0.5rem;
+    }
+    .resumeContent>div,.aboutMe{
+        padding: 1rem 0 1rem 0;
+    }
+    .aboutMe span{
+        padding: 0.5rem 0  0 0.5rem;
+    }
+    .resumeDiv span{
+        font-size: 0.5rem;
+    }
+    .resumeContent>div>span:nth-child(2) span{
+        font-size: 0.5rem;
+    }
+    .resumeContent>div>span:nth-child(2) span p{
+        font-size: 0.2rem;
+    }
+
+}
+
+@media (max-width: 415px){
+    /*<=768的设备*/
+
+    .eachResume{
+        padding: 0.5rem;
+    }
+    .eachResume a h2{
+        font-size: 0.2rem;
+    }
+    .eachResume a:nth-child(2){
+        margin: 0.2rem;
+    }
+    .container h1,h4{
+        margin: 4rem 0 4rem 0;
+        font-size: 1rem;
+    }
+
+}

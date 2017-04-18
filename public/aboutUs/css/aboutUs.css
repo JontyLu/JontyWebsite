@@ -1,0 +1,90 @@
+
+.container h1{
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5rem 0 5rem 0;
+    text-shadow: 1px 1px #000;
+}
+
+
+@media (max-width: 1199px){
+    /*<=1199的设备 */
+
+}
+
+@media (max-width: 1024px){
+    /*<=1199的设备 */
+
+}
+
+@media (max-width: 991px){
+    /*<=991的设备*/
+    .eachResume a h2{
+        font-size: 0.6rem;
+    }
+    .eachResume a:nth-child(2){
+        margin: 2.3rem;
+    }
+    .navMenu{
+        display: none;
+    }
+    .smallMenu{
+        width: 10%;
+        visibility: visible;
+    }
+    .navOpenMenu a{
+        margin-top: 1rem;
+        font-size: 0.5rem;
+
+    }
+
+}
+@media (max-width: 767px){
+    /*<=768的设备*/
+
+}
+
+@media (max-width: 767px){
+    /*<=768的设备*/
+
+
+}
+
+@media (max-width: 640px){
+    /*<=768的设备*/
+    .eachResume a:nth-child(2){
+        margin: 1.0rem;
+    }
+    .navOpenMenu a{
+        margin-top: 0.5rem;
+        font-size: 0.5rem;
+
+    }
+    .logo,.logo-divider,.logoname{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 415px){
+    /*<=768的设备*/
+
+    .eachResume{
+        padding: 0.5rem;
+    }
+    .eachResume a h2{
+        font-size: 0.2rem;
+    }
+    .eachResume a:nth-child(2){
+        margin: 0.2rem;
+    }
+    .container h1{
+        margin: 4rem 0 4rem 0;
+        font-size: 1rem;
+    }
+    .navOpenMenu a{
+        margin-top: 1rem;
+        font-size: 0.5rem;
+
+    }
+}
